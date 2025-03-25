@@ -1,0 +1,38 @@
+@font-face { font-family: Ethnocentric; src: url('Ethnocentric.otf'); } 
+
+body
+{
+    margin: 0px;
+}
+
+
+.containerHeader
+{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(235, 232, 232, 0.966);
+}
+.item-1
+{
+    flex-grow: 0.5;
+    
+}
+.item-2
+{
+    margin-left: 200px;
+    font-family: Ethnocentric;
+    justify-content: right;
+}
+.item-2 a
+{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 10px;
+    font-size: 20px;
+}
+.item-3
+{
+    margin-top: 10px;
+    margin-left: 400px;
+}
