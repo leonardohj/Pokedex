@@ -1,38 +1,99 @@
-@font-face { font-family: Ethnocentric; src: url('Ethnocentric.otf'); } 
+@font-face { font-family: Ethnocentric; src: url('others/Ethnocentric.otf'); } 
 
 body
 {
     margin: 0px;
 }
 
-
 .containerHeader
 {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
     padding: 10px;
     background-color: rgba(235, 232, 232, 0.966);
 }
 .item-1
 {
-    flex-grow: 0.5;
-    
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
 .item-2
 {
-    margin-left: 200px;
-    font-family: Ethnocentric;
-    justify-content: right;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: grid;
+    place-items: center;
 }
-.item-2 a
+.item-2 div
+{
+    display: flex;
+}
+.item-2 div a
 {
     color: rgb(0, 0, 0);
     text-decoration: none;
-    margin: 10px;
     font-size: 20px;
+    font-family: Ethnocentric;
+    padding: 10px;
 }
 .item-3
 {
-    margin-top: 10px;
-    margin-left: 400px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: grid;
+    place-items: center;
+    justify-content: end;
+    padding-right: 20px;    
+}
+.search-bar
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    background-color: rgba(228, 225, 225, 0.966);
+    border-color: rgba(235, 232, 232, 0.966);
+    border-style: solid;
+    padding: 10px 20px;
+    
+}
+.search-bar input
+{
+    border: 0px;
+    background-color: rgba(228, 225, 225, 0.966);
+    font-size: 20px;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+}
+.search-bar button
+{
+    border: 0px;
+    background-color: rgba(228, 225, 225, 0.966);
+    padding: 10px;
+    outline: none;
+}
+#blackEmBaixoDoHeader
+{
+    
+    background-color: black;
+}
+#gifstatic
+{
+    position: absolute;
+    background: grey;
+}
+#gifstatic:hover
+{
+    opacity: 0;
+}
+#gifactive
+{
+    position: absolute;
+    background-color: grey;
+    opacity: 0px;
+}
+nav .item-2 
+{
+
 }
